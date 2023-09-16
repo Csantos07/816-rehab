@@ -31,14 +31,20 @@ nav {
   align-items: center;
 }
 
+nav img {
+  /* width: 10%; */
+  width: 70%;
+}
+
 .menu-icon-container {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin-right: 1rem;
+
 }
 .menu-icon.line {
   width: 90%;
@@ -52,6 +58,29 @@ nav {
 main {
   flex-grow: 1; /* Allow main to expand and take remaining space */
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -3em;
+}
+
+.call-to-action button {
+  width: 50%;
+  padding: 1rem;
+  position: relative;
+  top: -3rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.6rem;
+  background-color: #5FA7AB;
+  color: white;
 }
 
 /* Style the footer */

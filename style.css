@@ -1,0 +1,62 @@
+/* Apply styles to the container */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure container takes at least the viewport height */
+  margin: 0;
+  background-color: #708D81;
+  background-image: url('assets/images/mobile-background-splash-page-with-color.png');
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: #000000;
+  /* color: white; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon-container {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 1rem;
+}
+.menu-icon.line {
+  width: 90%;
+  background-color: white;
+  /* border: 1px solid white; */
+  height: 1px;
+}
+
+
+/* Style the main content section */
+main {
+  flex-grow: 1; /* Allow main to expand and take remaining space */
+  padding: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+}
